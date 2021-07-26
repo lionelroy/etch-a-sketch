@@ -30,7 +30,7 @@ function changeColor(e) {
 }
 
 function newGrid() {
-    let newSize = prompt("Enter new size from 1-50.");
+    let newSize = prompt("Enter new size from 1-64.");
   
     if (newSize !== null) {
         newSize = parseInt(newSize);
