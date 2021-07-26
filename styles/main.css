@@ -37,7 +37,7 @@ header {
 }
 
 svg text {
-    letter-spacing: 8px;
+    letter-spacing: 5px;
     padding-top: 40px; 
     stroke: var(--header-stroke);
     font-size: 6em;
@@ -84,8 +84,8 @@ svg text {
     background-color: var(--button-active-background);
   }
 
-.container {
-    padding: 1rem;
+#grid-container {
+    margin-top: 20px;
 }
   
 .grid {
