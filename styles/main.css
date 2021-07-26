@@ -1,6 +1,16 @@
 :root {
     --background: #f2f2f2;
     --border: #000000;
+    --header-background: #048abf;
+    --header-stroke: #f20505;
+    --header-fill-0: #f2f2f2;
+    --header-fill-100: #ee3b3b;
+    --button-color: #f2f2f2;
+    --button-background: #048abf;
+    --button-background-hover: #f20505;
+    --grid-background: #ffffff;    
+    --button-active-background: #f20505;
+    --button-active-color: #048abf;
 }
 
 * {
@@ -9,13 +19,18 @@
     box-sizing: border-box;
 }
 
+html {
+    line-height: 1.6;
+}
+
 body {
     background-color: var(--background);
+    text-align: center;
 }
- 
 
 header {
-    background: #048abf;
+    background-color: var(--header-background);
+    border-radius: 5px;
     padding-top: 40px;
     margin: 20px;
     font-family: 'Bungee Shade', cursive;
@@ -24,51 +39,50 @@ header {
 svg text {
     letter-spacing: 8px;
     padding-top: 40px; 
-    stroke: #f20505;
+    stroke: var(--header-stroke);
     font-size: 6em;
-    font-weight: 750;
-    stroke-width: 2;
+    font-weight: 700;
+    stroke-width: 3;
    
     animation: textAnimate 5s infinite alternate;
     
-  }
+}
   
-  @keyframes textAnimate {
+ @keyframes textAnimate {
     0% {
       stroke-dasharray: 0 70%;
       stroke-dashoffset:  20%;
-      fill: #f2f2f2;
+      fill: var(--header-fill-0);
   
     }
     
     100% {
       stroke-dasharray: 50% 0;
       stroke-dashoffset: -20%;
-      fill: #ee3b3b;
+      fill: var(--header-fill-100);
     }
     
 }
 
-.restart-button {
-    text-align: center;
-}
-
-button {
+.button {
     border-radius: 5px;
-    color: #f2f2f2;
-    background-color: #048abf;
+    color: var(--button-color);
+    background-color: var(--button-background);
     font-weight: bold;
     padding: 5px;
 }
 
-button:hover {
+.button:hover {
     cursor:pointer;
-    color:#f2f2f2;
-    background-color: #f20505;
+    color: var(--button-color);
+    background-color: var(--button-background-hover);
     transition: all 0.5s ease;
 }
 
-  
+.button:active {
+    color: var(--button-active-color);
+    background-color: var(--button-active-background);
+  }
 
 .container {
     padding: 1rem;
@@ -76,7 +90,7 @@ button:hover {
   
 .grid {
     display: grid;
-    background-color: #ffffff;
+    background-color: var(--grid-background);
     max-width: 450px;
     min-height: 450px;
     margin: 2rem auto;
@@ -85,4 +99,15 @@ button:hover {
 
 .grid-element {
     border: 1px solid var(--border);
+}
+
+@media (max-width: 450px) {
+    header {
+      font-size: 2.4rem;
+    }
+  
+    .grid {
+      max-width: 300px;
+      min-height: 300px;
+    }
 }
