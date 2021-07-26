@@ -34,8 +34,8 @@ function newGrid() {
   
     if (newSize !== null) {
         newSize = parseInt(newSize);
-        if (newSize < 1 || newSize > 50 || Number.isNaN(newSize)) {
-            alert("The size must be a number from 1 to 50.");
+        if (newSize < 1 || newSize > 64 || Number.isNaN(newSize)) {
+            alert("The size must be a number from 1 to 64.");
             newGrid();
         } else {
             clearGrid();
