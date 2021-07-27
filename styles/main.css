@@ -107,3 +107,26 @@ svg text {
       min-height: 300px;
     }
 }
+
+footer{
+    font-size: 25px;
+    font-family: 'Allerta Stencil', sans-serif;
+    bottom: 0;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#gh-logo{
+    width: 35px;
+    height: 35px;
+    margin-bottom: -9px;
+    margin-right: 10px;
+}
