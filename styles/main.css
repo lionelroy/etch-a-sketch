@@ -31,9 +31,11 @@ body {
 header {
     background-color: var(--header-background);
     border-radius: 5px;
-    padding-top: 40px;
+    padding: 1vw;
+    padding-top: 35px;
     margin: 20px;
     font-family: 'Bungee Shade', cursive;
+    font-size: 1vw;
 }
 
 svg text {
@@ -110,7 +112,6 @@ svg text {
 
 footer{
     font-size: 25px;
-    font-family: 'Allerta Stencil', sans-serif;
     bottom: 0;
     justify-content: center;
 }
