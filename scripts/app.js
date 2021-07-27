@@ -30,12 +30,12 @@ function changeColor(e) {
 }
 
 function newGrid() {
-    let newSize = prompt("Enter new size from 1-64.");
+    let newSize = prompt("Enter a new grid size from 1 to 64.");
   
     if (newSize !== null) {
         newSize = parseInt(newSize);
         if (newSize < 1 || newSize > 64 || Number.isNaN(newSize)) {
-            alert("The size must be a number from 1 to 64.");
+            alert("Oops!!! Something went wrong. Enter a number from 1 to 64.");
             newGrid();
         } else {
             clearGrid();
@@ -45,7 +45,7 @@ function newGrid() {
     }
 }
   
-  function clearGrid() {
+function clearGrid() {
     const gridArray = Array.from(gridContainer.childNodes);
     gridArray.forEach((element) => {
         gridContainer.removeChild(element);

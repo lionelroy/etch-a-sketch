@@ -43,25 +43,20 @@ svg text {
     font-size: 6em;
     font-weight: 700;
     stroke-width: 3;
-   
     animation: textAnimate 5s infinite alternate;
-    
 }
   
- @keyframes textAnimate {
+@keyframes textAnimate {
     0% {
-      stroke-dasharray: 0 70%;
-      stroke-dashoffset:  20%;
-      fill: var(--header-fill-0);
-  
-    }
-    
+        stroke-dasharray: 0 70%;
+        stroke-dashoffset:  20%;
+        fill: var(--header-fill-0);
+    }   
     100% {
       stroke-dasharray: 50% 0;
       stroke-dashoffset: -20%;
       fill: var(--header-fill-100);
-    }
-    
+    }    
 }
 
 .button {
@@ -86,11 +81,13 @@ svg text {
 
 #grid-container {
     margin-top: 20px;
+    box-shadow: rgb(22, 22, 22) 15px 15px;
 }
   
 .grid {
     display: grid;
     background-color: var(--grid-background);
+    border-radius: 4px;
     max-width: 450px;
     min-height: 450px;
     margin: 2rem auto;
@@ -104,8 +101,7 @@ svg text {
 @media (max-width: 450px) {
     header {
       font-size: 2.4rem;
-    }
-  
+    } 
     .grid {
       max-width: 300px;
       min-height: 300px;
