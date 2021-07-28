@@ -62,12 +62,12 @@ svg text {
 }
 
 .button {
-    border-radius: 5px;
+    border-radius: 8px;
     color: var(--button-color);
     background-color: var(--button-background);
     font-size: 1.1em;
     font-weight: bold;
-    padding: 5px;
+    padding: 6px;
 }
 
 .button:hover {
