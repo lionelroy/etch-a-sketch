@@ -65,6 +65,7 @@ svg text {
     border-radius: 5px;
     color: var(--button-color);
     background-color: var(--button-background);
+    font-size: 1.1em;
     font-weight: bold;
     padding: 5px;
 }
@@ -90,8 +91,8 @@ svg text {
     display: grid;
     background-color: var(--grid-background);
     border-radius: 4px;
-    max-width: 450px;
-    min-height: 450px;
+    max-width: 520px;
+    min-height: 520px;
     margin: 2rem auto;
     border: 2px solid var(--border);
 }
@@ -100,7 +101,7 @@ svg text {
     border: 1px solid var(--border);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 520px) {
     header {
       font-size: 2.4rem;
     } 
