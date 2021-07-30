@@ -40,9 +40,9 @@ header {
 
 svg text {
     letter-spacing: 5px;
-    padding-top: 40px; 
+    padding-top: 37px; 
     stroke: var(--header-stroke);
-    font-size: 7.5em;
+    font-size: 7.6em;
     font-weight: 700;
     stroke-width: 3;
     animation: textAnimate 5s infinite alternate;
